@@ -42,3 +42,19 @@ h1{
     text-align: center;
     color: #383E56;
 }
+
+@media only screen and (max-width:600px){
+    .container{
+        grid-template-areas:'header' 'lsb' 'slider' 'rsb' 'footer'
+    } 
+}
+@media only screen and (min-width:600px){
+    .container{
+        grid-template-areas:'header header' 'lsb rsb' 'slider slider'  'footer footer'
+    } 
+}
+@media only screen and (min-width:1000px){
+    .container{
+        grid-template-areas: ' header header header header header header' 'lsb slider slider slider slider rsb' 'footer footer footer footer footer footer '
+    } 
+}
